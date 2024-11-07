@@ -160,3 +160,104 @@ header{
         }
     }
 }
+
+.services{
+    background-color: white;
+    .heading{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        .hrline{
+            width: 100%;
+            background-color: #967744;
+            height: 2px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        h2{
+            width: 500px;
+            color: #967744;
+            text-align: center;
+        }
+    }
+    .serviceContents{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 50px;
+        .servicesSingleContent{
+            margin-left: 20px;
+            width: 200px;
+            background-color: #967744;
+            .serviceImages{
+                width: 200px;
+                height: 130px;
+                
+            }
+            p{
+                text-align: center;
+                color: #fff;
+                padding-bottom: 10px;
+            }
+           
+        }
+    }
+}
+.takeAction{
+    background-color: #fff;
+    text-align: center;
+    padding-top: 30px;
+   h1{
+    color: #967744;
+    font-size: 30px;
+   }
+   p{
+    padding-bottom: 20px;
+   }
+   .takeActionButton{
+    background-color: #967744;
+    border-radius: 30px;
+    border: none;
+    margin-top: 5px;
+    padding: 5px 15px;
+    color: white;
+}
+}
+.articles{
+    background-color: #dab579;
+    .heading{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        .hrline{
+            width: 100%;
+            background-color: #ffffff;
+            height: 2px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        h2{
+            width: 700px;
+            color: #ffffff;
+            text-align: center;
+        }
+    }
+    .articleContents{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-bottom: 50px;
+        .articleSingleContent{
+           
+            width: 300px;
+            .articleImages{
+                width: 300px;
+                height: 200px;
+            }
+
+        }
+    }
+}
