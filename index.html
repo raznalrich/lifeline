@@ -5,8 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lifeline</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 </head>
+<style>
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .swiper {
+      margin-left: auto;
+      margin-right: auto;
+    }
+</style>
 <body>
+    <video autoplay muted loop id="bgVideo">
+        <source src="./assets/bgvideo.mp4" type="video/mp4">
+        <!-- Provide a fallback message for unsupported browsers -->
+        Your browser does not support the video tag.
+      </video>
     <nav class="navbar">
         <div class="logo">
             <img src="./assets/logo.png" alt="" srcset="">
@@ -28,7 +72,7 @@
         </div>
     </nav>
     <header>
-        <h1>TONE YOUR MIND, SHAPE YOUR FUTURE</h1>
+        <h1 style="margin-left: 50px;margin-right: 50px;text-align: center;">IF YOU CHANGE THE WAY YOU LOOK AT THINGS THE THINGS YOU LOOK AT CHANGE</h1>
         <button class="headerButton">
             Book a consultation
         </button>
@@ -73,7 +117,33 @@
     </section>
 
     <section class="testimonial">
-        
+        <div class="heading">
+            <div class="hrline"></div>
+            <h2 class="headingName">What others say about therapy…</h2>
+            <div class="hrline"></div>
+        </div>
+        <div class="testimonialcontent">
+            <div class="singletesticontent">
+                <div class="testilogo">
+                    <img src="./assets/OIP (5).jpg" alt="" srcset="">
+                </div>
+                <div class="sidecontent">
+                    <p>“I couldn’t stop thinking, and it sent me into a spiral of worry. Today I know how to break the cycles.“</p>
+                    <h2>Melvin Abraham</h2>
+                    <p>Editor</p>
+                </div>
+            </div>
+            <div class="singletesticontent">
+                <div class="testilogo">
+                    <img src="./assets/ThisPersonDoesNotExist_fail2-284x300.jpg" alt="" srcset="">
+                </div>
+                <div class="sidecontent">
+                    <p>“I used to be self-critical, worry more about others than myself and lack in confidence. Therapy helped me to overcome much of this.“</p>
+                    <h2>Mona</h2>
+                    <p>PhD Student</p>
+                </div>
+            </div>
+        </div>
     </section>
     <section class="services">
         <div class="heading">
@@ -82,48 +152,85 @@
             <div class="hrline"></div>
         </div>
         <div class="serviceContents">
-            <div class="servicesSingleContent">
-                <img class="serviceImages" src="./assets/services/pexels-silverkblack-23496497.jpg" alt="">
-                <p>Family therapy</p>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="servicesSingleContent">
+                    <img class="serviceImages" src="./assets/services/pexels-silverkblack-23496497.jpg" alt="">
+                    <p>Family therapy</p>
+                </div>
             </div>
-            <div class="servicesSingleContent">
-                <img class="serviceImages" src="./assets/services/How-to-Cure-Mental-Disorder.jpg" alt="">
-                <p>Person-centered therapy</p>
+                  <div class="swiper-slide">
+                    <div class="servicesSingleContent">
+                        <img class="serviceImages" src="./assets/services/How-to-Cure-Mental-Disorder.jpg" alt="">
+                        <p>Person-centered therapy</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="servicesSingleContent">
+                    <img class="serviceImages" src="./assets/services/Hypnotherapy-for-Anxiety.png" alt="">
+                    <p>Individual counseling</p>
+                </div>
             </div>
-            <div class="servicesSingleContent">
-                <img class="serviceImages" src="./assets/services/Hypnotherapy-for-Anxiety.png" alt="">
-                <p>Individual counseling</p>
-            </div>
-            <div class="servicesSingleContent">
-                <img class="serviceImages" src="./assets/services/OIP (10).jpg" alt="">
-                <p>Clinical Counseling</p>
-            </div>
-            <div class="servicesSingleContent">
-                <img class="serviceImages" src="./assets/services/OIP (5).jpg" alt="">
-                <p>Abuse counselling</p>
-            </div>
+                  <div class="swiper-slide">
+                    <div class="servicesSingleContent">
+                        <img class="serviceImages" src="./assets/services/OIP (10).jpg" alt="">
+                        <p>Clinical Counseling</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="servicesSingleContent">
+                        <img class="serviceImages" src="./assets/services/OIP (5).jpg" alt="">
+                        <p>Abuse counselling</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="servicesSingleContent">
+                        <img class="serviceImages" src="./assets/services/OIP (6).jpg" alt="">
+                        <p>Career counseling</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="servicesSingleContent">
+                        <img class="serviceImages" src="./assets/services/OIP (8).jpg" alt="">
+                        <p>Hypno Therapy</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="servicesSingleContent">
+                        <img class="serviceImages" src="./assets/services/OIP (9).jpg" alt="">
+                        <p>Behavioral Therapy</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="servicesSingleContent">
+                        <img class="serviceImages" src="./assets/services/OIP (7).jpg" alt="">
+                        <p>School counseling</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="servicesSingleContent">
+                        <img class="serviceImages" src="./assets/services/psychotherapy-scaled.jpg" alt="">
+                        <p>Mental health counselor</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <!-- <div class="swiper-pagination"></div> -->
+              </div>
+            
+            
+            
+            
+            
         </div>
         <div class="serviceContents" style="padding-top: 30px;">
-            <div class="servicesSingleContent">
-                <img class="serviceImages" src="./assets/services/OIP (6).jpg" alt="">
-                <p>Career counseling</p>
-            </div>
-            <div class="servicesSingleContent">
-                <img class="serviceImages" src="./assets/services/OIP (8).jpg" alt="">
-                <p>Hypno Therapy</p>
-            </div>
-            <div class="servicesSingleContent">
-                <img class="serviceImages" src="./assets/services/OIP (9).jpg" alt="">
-                <p>Behavioral Therapy</p>
-            </div>
-            <div class="servicesSingleContent">
-                <img class="serviceImages" src="./assets/services/OIP (7).jpg" alt="">
-                <p>School counseling</p>
-            </div>
-            <div class="servicesSingleContent">
-                <img class="serviceImages" src="./assets/services/psychotherapy-scaled.jpg" alt="">
-                <p>Mental health counselor</p>
-            </div>
+            
+            
+            
+           
+            
         </div>
     </section>
     <section class="articles">
@@ -139,16 +246,21 @@
                 <p>12/12/2024</p>
             </div>
             <div class="articleSingleContent">
-                <img class="articleImages" src="./assets/services/psychotherapy-scaled.jpg" alt="">
+                <img class="articleImages" src="./assets/Screenshot 2024-11-11 004921.png" alt="">
                 <h1>Mental health counselor</h1>
          
                 <p>12/12/2024</p>
             </div>
             <div class="articleSingleContent">
-                <img class="articleImages" src="./assets/services/psychotherapy-scaled.jpg" alt="">
+                <img class="articleImages" src="./assets/mental-health_186_46.jpg" alt="">
                 <h1>Mental health counselor</h1>
            
                 <p>12/12/2024</p>
+            </div>
+        </div>
+        <div class="buttonDiv">
+            <div class="button">
+                Read More
             </div>
         </div>
     </section>
@@ -157,5 +269,88 @@
         <p>Want to make an appointment ?</p>
         <button class="takeActionButton">We love to hear from you</button>
     </section>
+    <section class="threebutton">
+        <div class="button" style="background-color: #2f423b;">
+           <h4>Learn more about anxiety</h4> 
+        </div>
+        <div class="button">
+            <h4>Contact</h4>
+        </div>
+        <div class="button" style="background-color: #2f423b;">
+            <h4>Learn more about Self-Critisism</h4>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="footercol">
+            <div class="footerhead">
+                <h2>Psychology Clinic</h2>
+            </div>
+            <div class="footercontent">
+                <p>Leading Experts on the Treatment of Anxiety and adjustment Disorders in the city of London</p>
+            </div>
+        </div>
+        <div class="footercol">
+            <div class="footerhead">
+                <h2>Services</h2>
+            </div>
+            <div class="footercontent">
+                <ul>
+                    <li>About Us</li>
+                    <li>Specialism</li>
+                    <li>Fees & Availabilit</li>
+                    <li>Book a Consultation</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footercol">
+            <div class="footerhead">
+                <h2>Contact Us</h2>
+            </div>
+            <div class="footercontent">
+               <ul>
+                <li>
+                    <img src="./assets/phone-solid.svg" alt="" srcset="">
+                    <p>+91 99999 99999</p>
+                </li>
+                <li>
+                    <img src="./assets/location-dot-solid.svg" alt="" srcset="">
+                    <p>Dummy location in kakkanad , kochi , 680686</p>
+                </li>
+                <li>
+                    <img src="./assets/location-dot-solid.svg" alt="" srcset="">
+                    <p>Dummy@gmail.com</p>
+                </li>
+               </ul>
+            </div>
+        </div>
+    </section>
+    <section class="copyright">
+        <p>All rights reserved &#xA9; 2024 Lifeline.</p>
+    </section>
+  
+
+    <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 4,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
 </body>
 </html>

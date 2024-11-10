@@ -3,17 +3,28 @@
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+/* Background video styling */
+#bgVideo {
+    position: fixed; /* Keeps the video in the background */
+    top: 50%;
+    left: 50%;
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    object-fit: cover; /* Ensures the video fills the screen */
+    transform: translate(-50%, -50%);
+    z-index: -2; /* Puts the video at the very back */
+  }
 body{
     /* background-color: #2f423b; */
     background-image: url(./assets/bgimage.jpg);
-    background-size: cover; /* Cover the entire viewport */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    background-attachment: fixed; /* Keeps the background fixed when scrolling */
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
     background-position: center;
 }
 body::before {
     content: "";
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -29,6 +40,7 @@ nav{
     position: fixed;
     width: 100%;
     background-color: #2f423b;
+    z-index: 999;
 }
 .logo img{
     width: 300px;
@@ -102,6 +114,7 @@ header{
 /* meet The Team */
 .meetTheTeam{
     background-color: white;
+    padding-bottom: 50px;
     .heading{
         display: flex;
         justify-content: center;
@@ -161,6 +174,64 @@ header{
     }
 }
 
+.testimonial{
+    background-color: #f0dbbb;
+    padding-bottom: 50px;
+    .heading{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        .hrline{
+            width: 100%;
+            background-color: #967744;
+            height: 2px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        h2{
+            width: 1000px;
+            color: #967744;
+            text-align: center;
+        }
+    }
+    .testimonialcontent{
+        display: flex;
+        .singletesticontent{
+            width: 500px;
+            padding: 10px 20px;
+            border: #2f423b 1px solid;
+            margin-left: 50px;
+            margin-right: 50px;
+            border-radius: 50px;
+            display: flex;
+            justify-content: center;
+            .testilogo{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                img{
+                    height: 80px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    margin-right: 20px;
+                }
+            }
+            .sidecontent{
+                align-items: center;
+                justify-content: center;
+
+                p{
+                    font-style: italic;
+                    font-size: 15px;
+                }
+            }
+        }
+
+    }
+}
+
 .services{
     background-color: white;
     .heading{
@@ -208,6 +279,7 @@ header{
     background-color: #fff;
     text-align: center;
     padding-top: 30px;
+    padding-bottom: 50px;
    h1{
     color: #967744;
     font-size: 30px;
@@ -259,5 +331,79 @@ header{
             }
 
         }
+    }
+    .buttonDiv{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 20px;
+        .button{
+            background-color: #2f423b;
+            color: #fff;
+            padding: 10px 15px;
+            border-radius: 50px;
+        }
+    }
+}
+.threebutton{
+    background-color: #fff;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    .button{
+        background-color: #967744;
+        color: #fff;
+        padding: 10px 20px;
+        width: 300px;
+        text-align: center;
+        
+    }
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    background-color: #2f423b;
+    padding-bottom: 10px;
+    .footercol{
+        color: #fff;
+        margin-left: 20px;
+        margin-right: 20px;
+        min-width: 300px;
+        .footerhead{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-top: #967744 2px solid;
+            border-bottom: #967744 2px solid;
+        }
+        ul{
+            padding-left: 20px;
+        }
+        .footercontent{
+            ul{
+                li{
+                    display: flex;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+
+                    img{
+                        height: 20px;
+                        padding-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+.copyright{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #2f423b;
+    border-top: #fff 1px solid;
+    text-align: center;
+    p{
+        color: #fff;
     }
 }
