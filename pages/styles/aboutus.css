@@ -1,0 +1,199 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+  
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: white 1px solid;
+    padding-bottom: 10px;
+    position: fixed;
+    width: 100%;
+    background-color: #2f423b;
+    z-index: 999;
+}
+.logo img{
+    width: 300px;
+    padding-left: 20px;
+}
+.list ul{
+    padding-right: 20px;
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    padding-top: 30px;
+ 
+
+    li{
+        padding-left: 20px;
+        color: white;
+        font-weight: 500;
+        font-size: 14px;
+        a{
+            text-decoration: none;
+           color: #fff;
+        }
+        
+
+    }
+}
+
+.aboutusbody{
+    
+   padding-top: 100px;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+    .aboutushead{
+        display: flex;
+        border: #967744 2px solid;
+            border-top-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+        width: 800px;
+        justify-content: center;
+        padding: 30px;
+        margin-bottom: 50px;
+        img{
+            height: 200px;
+            width: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-right: 50px;
+        }
+        h1{
+            font-size: 30px;
+        }
+        p{
+            font-style: italic;
+            padding-top: 10px;
+        }
+        h4{
+            padding-top: 10px;
+        }
+    }
+    .chooseus{
+        background-color: #967744;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        h1{
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 15px;
+            color: #fff;
+        }
+        p{
+            padding-left: 100px;
+            padding-right: 100px;
+            padding-bottom: 50px;
+            padding-top: 20px;
+            text-align: center;
+            color: #fff;
+        }
+    }
+}
+.darkgreen{
+    background-color: #2f423b;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-bottom: 50px;
+    h1{
+        color:#967744;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-bottom: #fff 1px solid;
+    }
+    p{
+        padding-top: 30px;
+        color: #fff;
+    }
+    ul{
+        padding-top: 20px;
+        padding-left: 20px;
+        li{
+            color: #fff;
+            padding-top: 5px;
+        }
+    }
+}
+
+.bookasession{
+    padding-top: 50px;
+    padding-bottom: 40px;
+    padding-left: 150px;
+    padding-right: 150px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1{
+        padding-bottom: 20px;
+        color: #967744;
+    }
+    .button{
+        margin-top: 40px;
+        background-color: #967744;
+        color: #fff;
+        width: 200px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        border-radius: 50px;
+        
+        
+    }
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    background-color: #2f423b;
+    padding-bottom: 10px;
+    .footercol{
+        color: #fff;
+        margin-left: 20px;
+        margin-right: 20px;
+        min-width: 300px;
+        .footerhead{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-top: #967744 2px solid;
+            border-bottom: #967744 2px solid;
+        }
+        ul{
+            padding-left: 20px;
+        }
+        .footercontent{
+            ul{
+                li{
+                    display: flex;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+
+                    img{
+                        height: 20px;
+                        padding-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+.copyright{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #2f423b;
+    border-top: #fff 1px solid;
+    text-align: center;
+    p{
+        color: #fff;
+    }
+}
