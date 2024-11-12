@@ -412,3 +412,166 @@ header{
         color: #fff;
     }
 }
+
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+
+    /* Nav */
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+       
+    }
+
+    .logo img {
+        width: 200px;
+        padding-left: 0;
+    }
+
+    .list ul {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10px;
+        display: none;
+    }
+
+    .list ul li {
+        padding-left: 0;
+        padding-top: 5px;
+    }
+
+    /* Header */
+    body{
+        width: 100%;
+    }
+    header h1 {
+        font-size: 30px;
+        text-align: center;
+
+    }
+
+    header .headerButton {
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+
+    /* About Us */
+    .aboutus {
+        height: auto;
+        padding: 20px;
+    }
+
+    .aboutus .aboutusContent {
+        width: 90%;
+    }
+
+    .aboutus .headerButton {
+        font-size: 16px;
+        margin-top: 15px;
+        padding: 8px 15px;
+    }
+
+    /* Meet The Team */
+    .meetTheTeam .heading h2 {
+        width: auto;
+        font-size: 24px;
+    }
+
+    .meetTheTeam .profileContent {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .meetTheTeam .insideContent {
+        width: 90%;
+    }
+
+    /* Testimonial */
+    .testimonial .heading h2 {
+        width: auto;
+        font-size: 24px;
+    }
+
+    .testimonial .testimonialcontent {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial .singletesticontent {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    /* Services */
+    .services .heading h2 {
+        width: auto;
+        font-size: 24px;
+    }
+
+    .services .serviceContents {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services .servicesSingleContent {
+        width: 80%;
+        margin: 10px 0;
+    }
+
+    /* Take Action */
+    .takeAction h1 {
+        font-size: 24px;
+    }
+
+    .takeAction p {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    /* Articles */
+    .articles .heading h2 {
+        width: auto;
+        font-size: 24px;
+    }
+
+    .articles .articleContents {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .articles .articleSingleContent {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    /* Three Button Section */
+    .threebutton {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .threebutton .button {
+        width: 80%;
+    }
+
+    /* Footer */
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .footercol {
+        min-width: auto;
+        width: 90%;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    /* Copyright */
+    .copyright p {
+        font-size: 12px;
+    }
+}
