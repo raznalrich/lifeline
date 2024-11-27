@@ -439,6 +439,9 @@ header{
         padding: 10px 0;
        
     }
+    .menubar{
+        display: block !important;
+    }
 
     .logo img {
         width: 200px;
