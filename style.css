@@ -32,6 +32,9 @@ body::before {
     background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity (0.5) as needed */
     z-index: -1; /* Keep it behind other content */
 }
+#menubar{
+    display: none;
+}
 nav{
     display: flex;
     justify-content: space-between;
@@ -45,6 +48,10 @@ nav{
 .logo img{
     width: 300px;
     padding-left: 20px;
+    
+}
+.menubar{
+    display: none;
 }
 .list ul{
     padding-right: 20px;
@@ -56,8 +63,10 @@ nav{
 
     li{
         padding-left: 20px;
+        padding-right: 20px;
         color: white;
         font-weight: 500;
+        border-right: #fff 1px solid;
         a{
             text-decoration: none;
            color: #fff;
@@ -403,7 +412,7 @@ header{
     }
 }
 #menubar{
-    display: block;
+    display: none;
 }
 .copyright{
     padding-top: 10px;
@@ -449,6 +458,7 @@ header{
     .list ul li {
         padding-left: 0;
         padding-top: 5px;
+        border-right: none;
     }
 
     /* Header */
