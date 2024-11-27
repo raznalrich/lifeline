@@ -27,13 +27,16 @@ nav{
     display: flex;
     text-decoration: none;
     list-style: none;
-    padding-top: 30px;
+    padding-top: 20px;
+    
  
 
     li{
+        padding-right: 20px;
         padding-left: 20px;
         color: white;
         font-weight: 500;
+        border-right: #fff 1px solid;
         font-size: 14px;
         a{
             text-decoration: none;
@@ -42,6 +45,9 @@ nav{
         
 
     }
+}
+.menubar{
+    display: none;
 }
 .topcontent{
     padding-top: 100px;
@@ -118,6 +124,7 @@ nav{
     padding-top: 20px;
     background-color: #967744;
     padding-bottom: 30px;
+    
     h1{
         color: #fff;
         padding-top: 10px;
@@ -185,5 +192,57 @@ nav{
     text-align: center;
     p{
         color: #fff;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav{
+        flex-direction: column;
+        text-align: center;
+    }
+    .logo img {
+        width: 150px;
+    }
+    .menubar{
+        display: block;
+    }
+    .list ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+        li{
+            border-right: none;
+        }
+    }
+
+    .topcontent {
+        padding: 100px 20px 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .topcontent h1 {
+        font-size: 20px;
+    }
+
+    .topcontent p {
+        font-size: 14px;
+    }
+
+    .spcontainer {
+        flex-direction: column;
+        gap: 10px;
+        .box {
+            min-width: 84% !important;
+            margin-right: 10px;
+        }
+    }
+
+   
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
     }
 }

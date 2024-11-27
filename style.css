@@ -402,6 +402,9 @@ header{
         }
     }
 }
+#menubar{
+    display: block;
+}
 .copyright{
     padding-top: 10px;
     padding-bottom: 10px;
@@ -416,11 +419,14 @@ header{
 
 /* Mobile responsive styles */
 @media (max-width: 768px) {
+    body{
+        /* width: 100%; */
+    }
 
     /* Nav */
     nav {
         flex-direction: column;
-        align-items: center;
+        /* align-items: center; */
         padding: 10px 0;
        
     }
@@ -429,12 +435,15 @@ header{
         width: 200px;
         padding-left: 0;
     }
+    /* #menubar img{
+        display: none;
+    } */
 
     .list ul {
         flex-direction: column;
         align-items: center;
         padding-top: 10px;
-        display: none;
+        /* display: none; */
     }
 
     .list ul li {
@@ -451,9 +460,21 @@ header{
         text-align: center;
 
     }
+    .buttonsAboutus{
+        display: flex;
+        flex-direction: column;
+    }
+    .heading{
+        h2{
+            font-size: 16px !important;
+        }
+        .hrline{
+            width: 10px !important;
+        }
+    }
 
     header .headerButton {
-        font-size: 16px;
+        font-size: 10px;
         padding: 8px 15px;
     }
 
@@ -465,6 +486,7 @@ header{
 
     .aboutus .aboutusContent {
         width: 90%;
+        padding: 0;
     }
 
     .aboutus .headerButton {
@@ -485,10 +507,19 @@ header{
     }
 
     .meetTheTeam .insideContent {
-        width: 90%;
+        max-width: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img{
+            width: 70px !important;
+            height: 70px;
+        }
+      
     }
 
     /* Testimonial */
+  
     .testimonial .heading h2 {
         width: auto;
         font-size: 24px;
@@ -497,11 +528,17 @@ header{
     .testimonial .testimonialcontent {
         flex-direction: column;
         align-items: center;
+        width: 100%;
     }
 
     .testimonial .singletesticontent {
-        width: 90%;
+        display: flex;
+        /* flex-direction: column; */
+        width: 300px;
+        max-width: 300px;
         margin: 10px 0;
+        margin-left: 20px;
+
     }
 
     /* Services */

@@ -27,14 +27,16 @@ nav{
     display: flex;
     text-decoration: none;
     list-style: none;
-    padding-top: 30px;
+    padding-top: 20px;
  
 
     li{
-        padding-left: 20px;
+        padding-right: 20px;
+    padding-left: 20px;
         color: white;
         font-weight: 500;
         font-size: 14px;
+        border-right: #fff 1px solid;
         a{
             text-decoration: none;
            color: #fff;
@@ -141,5 +143,99 @@ nav{
     text-align: center;
     p{
         color: #fff;
+    }
+}
+.menubar{
+    display: none;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .logo img {
+        width: 150px;
+    }
+    .menubar{
+        display: block;
+    }
+    .list ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .list ul li {
+        padding: 5px 0;
+        border-right: none;
+    }
+
+    .topcontent {
+        padding: 100px 10px 10px 10px;
+    }
+
+    .topcontent h1 {
+        font-size: 24px;
+    }
+
+    .topcontent p {
+        font-size: 14px;
+    }
+
+    .servicebox {
+        flex-direction: column;
+        padding: 0;
+        /* img{
+            display: none;
+        } */
+        .content{
+            margin-left: 0 !important;
+        }
+    }
+    .servicebox.one.three.five{
+        /* flex-direction: column !important;  */
+        padding: 0;
+    }
+    .servicebox.two{
+        flex-direction: column-reverse !important;
+    }
+    .servicebox.four{
+        flex-direction: column-reverse !important;
+    }
+    .servicebox.six{
+        flex-direction: column-reverse !important;
+    }
+
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .footercol {
+        min-width: auto;
+        width: 90%;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    /* Copyright */
+    .copyright p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .list ul {
+        padding: 0;
+    }
+
+    .topcontent h1 {
+        font-size: 20px;
+    }
+
+    .servicebox .content {
+        padding: 10px 20px;
     }
 }
