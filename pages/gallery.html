@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="./styles/gallery.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo" style="display: flex;justify-content: space-between;">
+            <img style=" width: 200px;
+    padding-left: 10px;" src="../assets/logo.png" alt="" srcset="">
+            <img class="menubar" id="menubar" style="width: 50px;padding-right: 20px;color: white;" src="../assets/menuicon.svg" alt="" srcset="">
+        </div>
+        <div class="list" id="list">
+            <ul>
+                <li><a href="../index.html">HOME</a></li>
+                <!-- <li>|</li> -->
+                <li><a href="./aboutus.html">ABOUT US</a></li>
+                <li><a style="color: #967744;" href="#">GALLERY</a></li>
+                <!-- <li>|</li> -->
+                <li><a href="./specialism.html">SPECIALISM</a></li>
+                <!-- <li>|</li> -->
+                <li><a href="./services.html">SERVICES</a></li>
+                <!-- <li>|</li> -->
+                
+                <li>
+                    <a href="tel:+919947885211">
+
+                        BOOK A CONSULTATION
+                    </a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="gallery">
+        
+<div class="container">
+    
+    <img src="../assets/services/11 (1).jpg" alt="" srcset="">
+    <img src="../assets/services/11 (2).jpg" alt="" srcset="">
+    <img src="../assets/services/11 (3).jpg" alt="" srcset="">
+    <img src="../assets/services/11 (4).jpg" alt="" srcset="">
+    <img src="../assets/services/11 (5).jpg" alt="" srcset="">
+    <img src="../assets/services/11 (6).jpg" alt="" srcset="">
+    <img src="../assets/services/11 (7).jpg" alt="" srcset="">
+    <img src="../assets/services/11 (8).jpg" alt="" srcset="">
+    <img src="../assets/services/11 (9).jpg" alt="" srcset="">
+</div>
+    </section>
+    
+
+    <div class="popup" id="popup">
+        <button class="close-btn" id="close-btn">&times;</button>
+        <img src="" alt="Popup Image" id="popup-img">
+    </div>
+    <section class="footer">
+        <div class="footercol">
+            <div class="footerhead">
+                <h2>Psychology Clinic</h2>
+            </div>
+            <div class="footercontent">
+                <p>Leading Experts on the Treatment of Anxiety and adjustment Disorders in the city of London</p>
+            </div>
+        </div>
+        <div class="footercol">
+            <div class="footerhead">
+                <h2>Services</h2>
+            </div>
+            <div class="footercontent">
+                <ul>
+                    <li>About Us</li>
+                    <li>Specialism</li>
+                    <li>Fees & Availabilit</li>
+                    <li>Book a Consultation</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footercol">
+            <div class="footerhead">
+                <h2>Contact Us</h2>
+            </div>
+            <div class="footercontent">
+               <ul>
+                <li>
+                    <img src="../assets/phone-solid.svg" alt="" srcset="">
+                    <p>+91 99478 85211</p>
+                </li>
+                <li>
+                    <img src="../assets/location-dot-solid.svg" alt="" srcset="">
+                    <p>Dummy location in kakkanad , kochi , 680686</p>
+                </li>
+                <li>
+                    <img src="../assets/envelope-solid.svg" alt="" srcset="">
+                    <p>Dummy@gmail.com</p>
+                </li>
+               </ul>
+            </div>
+        </div>
+    </section>
+    <section class="copyright">
+        <p>All rights reserved &#xA9; 2024 Lifeline.</p>
+    </section>
+    <script type="module" src="../script.js"></script>
+    <script>
+        // Get elements
+        const images = document.querySelectorAll('.gallery img');
+        const popup = document.getElementById('popup');
+        const popupImg = document.getElementById('popup-img');
+        const closeBtn = document.getElementById('close-btn');
+    
+        // Add click event to all images
+        images.forEach(img => {
+            img.addEventListener('click', () => {
+                popup.style.display = 'flex';
+                popupImg.src = img.src;
+            });
+        });
+    
+        // Close popup
+        closeBtn.addEventListener('click', () => {
+            popup.style.display = 'none';
+        });
+    
+        // Close popup on clicking outside the image
+        popup.addEventListener('click', (e) => {
+            if (e.target !== popupImg) {
+                popup.style.display = 'none';
+            }
+        });
+    </script>    
+</body>
+</html>
