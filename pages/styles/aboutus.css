@@ -80,6 +80,7 @@ nav {
 
 .aboutushead p {
     font-style: italic;
+  
     padding-top: 10px;
     text-align: justify;
 }
@@ -160,39 +161,46 @@ nav {
     cursor: pointer;
 }
 
-.footer {
+.footer{
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     background-color: #2f423b;
     padding-bottom: 10px;
-}
+    .footercol{
+        color: #fff;
+        margin-left: 20px;
+        margin-right: 20px;
+        min-width: 300px;
+        .footerhead{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-top: #967744 2px solid;
+            border-bottom: #967744 2px solid;
+        }
+        ul{
+            padding-left: 20px;
+        }
+        .footercontent{
+            ul{
+                li{
+                    display: flex;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    a{
+                        text-decoration: none;
+                        color: #fff;
+                    }
 
-.footercol {
-    color: #fff;
-    margin: 10px;
-    /* min-width: 250px; */
-}
-
-.footerhead {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-top: #967744 2px solid;
-    border-bottom: #967744 2px solid;
-    text-align: center;
-}
-
-.footercontent ul li {
-    display: flex;
-    align-items: center;
-    padding-top: 10px;
-}
-
-.footercontent ul li img {
-    height: 20px;
-    padding-right: 10px;
+                    img{
+                        height: 20px;
+                        padding-right: 10px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 .copyright {
@@ -205,9 +213,31 @@ nav {
 .copyright p {
     color: #fff;
 }
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
 
+.whatsapp-button a img {
+    width: 60px; /* Adjust size for responsiveness */
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp-button a img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
 /* Media Queries */
 @media (max-width: 768px) {
+    .whatsapp-button a img {
+        width: 50px; /* Slightly smaller on mobile */
+        height: 50px;
+    }
     nav {
         flex-wrap: wrap;
         padding: 10px;
@@ -263,9 +293,17 @@ nav {
     .bookasession {
         padding: 20px;
     }
+/* Footer */
+.footer {
+    flex-direction: column;
+    align-items: center;
+}
 
-    .footercol {
-        min-width: 200px;
-        margin: 10px;
-    }
+.footer .footercol {
+    min-width: auto;
+    width: 90%;
+    text-align: center;
+    margin: 10px 0;
+}
+
 }

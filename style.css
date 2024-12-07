@@ -22,6 +22,26 @@ body{
     background-attachment: fixed;
     background-position: center;
 }
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.whatsapp-button a img {
+    width: 60px; /* Adjust size for responsiveness */
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp-button a img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
 body::before {
     content: "";
     position: fixed;
@@ -96,6 +116,12 @@ header{
         color: white;
     }
 }
+section{
+    a{
+        text-decoration: none;
+        color: #fff;
+    }
+}
 .aboutus{
     height: 100vh;
     background: none;   
@@ -109,6 +135,10 @@ header{
     }
    p{
     padding-top: 20px;
+    font-size: 18px;
+   }
+   li{
+    font-size: 15px;
    }
    .buttonsAboutus{
     display: flex;
@@ -428,6 +458,10 @@ header{
 
 /* Mobile responsive styles */
 @media (max-width: 768px) {
+    .whatsapp-button a img {
+        width: 50px; /* Slightly smaller on mobile */
+        height: 50px;
+    }
     body{
         /* width: 100%; */
     }
