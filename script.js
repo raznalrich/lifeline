@@ -27,3 +27,20 @@ function nodisplay() {
     toggle = true; // Update toggle state
     console.log(toggle);
 }
+
+const form = document.getElementById('contact-form');
+
+form.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+
+    const emailBody = `Name: ${name}\nEmail: ${email}\nMessage: ${message}`;
+
+    // Replace 'your_email@example.com' with your actual email address
+    const mailtoLink = `mailto:raznalrich@gmail.com?subject=Contact Form Submission&body=${encodeURIComponent(emailBody)}`;
+
+    window.location.href = mailtoLink;
+});
