@@ -40,7 +40,7 @@ form.addEventListener('submit', (event) => {
     const emailBody = `Name: ${name}\nEmail: ${email}\nMessage: ${message}`;
 
     // Replace 'your_email@example.com' with your actual email address
-    const mailtoLink = `mailto:raznalrich@gmail.com?subject=Contact Form Submission&body=${encodeURIComponent(emailBody)}`;
+    const mailtoLink = `mailto:binduaravind@orktsgamil.com?subject=Contact Form Submission&body=${encodeURIComponent(emailBody)}`;
 
     window.location.href = mailtoLink;
 });
